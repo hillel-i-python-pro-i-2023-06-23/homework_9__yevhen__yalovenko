@@ -1,13 +1,9 @@
 import csv
 
-from app.loggers.loggers import get_custom_logger
 from app.services.processing_json import getting_request
 
 
-# 'https://drive.google.com/uc?export=download&id=13nk_FYpcayUck2Ctrela5Tjt9JQbjznt'
-
 def read_csv(url):
-    logger = get_custom_logger(__name__)
     response = getting_request(url)
     content = response.text.splitlines()
 

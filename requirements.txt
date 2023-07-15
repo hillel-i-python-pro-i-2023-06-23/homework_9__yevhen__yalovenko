@@ -1,6 +1,8 @@
 # For name and emoji generation.
 faker==19.1.0
 
+#For getting request for json
+requests==2.31.0
 # [code_style]-[BEGIN]
 # Pre-commit hook.
 pre-commit==3.3.3

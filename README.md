@@ -1,8 +1,7 @@
 # Docker homework-06
 
 ---
-![Main workflow](https://github.com/hillel-i-python-pro-i-2023-06-23/shared__docker__example_2023_06_23/actions/workflows/main-workflow.yml/badge.svg)
-
+[![Main workflow](https://github.com/hillel-i-python-pro-i-2023-06-23/homework_6__yevhen__yalovenko/actions/workflows/workflows.yml/badge.svg)](https://github.com/hillel-i-python-pro-i-2023-06-23/homework_6__yevhen__yalovenko/actions/workflows/workflows.yml)
 ## 🏠 Homework
 
 Yevhen_Yalovenko__Homework__06 related actions.

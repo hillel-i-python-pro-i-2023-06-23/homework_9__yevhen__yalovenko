@@ -1,18 +1,16 @@
-from faker import Faker
-from datetime import datetime
-
-
-def get_time():
-    now = datetime.now()
-    return now.strftime('%H:%M:%S')
-
-
-def hello_from_faker():
-    faker = Faker()
-    name = faker.name()
-    emoji = faker.emoji()
-    print(f"{emoji} {name} {emoji} says now is {get_time()}")
+from app.loggers.loggers import get_core_logger
+from app.services.processing_users import format_users, output_user_info
+from app.services.read_file import read_file
 
 
 def main():
-    hello_from_faker()
+    logger = get_core_logger()
+    logger.info(msg="Start First task")
+    text = read_file()
+    print(text)
+    logger.info(msg="End First task")
+    logger.info(msg="Start Second task")
+    formatted_users = format_users()
+    output = output_user_info(formatted_users)
+    print(output)
+    logger.info(msg="End Second task")

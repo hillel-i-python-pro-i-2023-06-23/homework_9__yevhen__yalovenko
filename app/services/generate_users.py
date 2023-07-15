@@ -1,7 +1,6 @@
 from typing import NamedTuple
 from collections.abc import Iterator
 
-from app.loggers.loggers import get_core_logger
 from app.services.faker import faker
 
 
@@ -32,15 +31,9 @@ def generate_user() -> User:
 
 
 def generate_users(amount: int) -> Iterator[User]:
-    logger = get_core_logger()
-
-    logger.debug(msg="generate_users.start")
 
     for index in range(1, amount + 1):
-        logger.debug(f"generate_users.iteration.{index}/{amount}")
         yield generate_user()
-
-    logger.debug("generate_users.end")
 
 
 

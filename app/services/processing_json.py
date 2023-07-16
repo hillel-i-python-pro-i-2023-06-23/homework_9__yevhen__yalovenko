@@ -1,8 +1,4 @@
-import requests
-
-
-def getting_request(url):
-    return requests.get(url)
+from app.services.getting_request import getting_request
 
 
 def processing_json_file(url) -> dict:

@@ -1,12 +1,14 @@
 import pathlib
 
-from app.config import FILES_INPUT_DIR
+from app.config import FILES_OUTPUT_DIR
 from app.loggers.loggers import get_custom_logger
+from app.services.create_file import create_file
 
 
 def read_file(path: pathlib.Path = None):
+    create_file(path)
     if path is None:
-        path = FILES_INPUT_DIR.joinpath("hello_world.txt")
+        path = FILES_OUTPUT_DIR / "new.txt"
 
     file_to_read = read_txt(txt_file_path=path)
     return file_to_read

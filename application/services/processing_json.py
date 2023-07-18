@@ -1,4 +1,4 @@
-from app.services.getting_request import getting_request
+from application.services.getting_request import getting_request
 
 
 def processing_json_file(url) -> dict:

@@ -1,4 +1,4 @@
-from app.services.generate_users import generate_users
+from application.services.generate_users import generate_users
 
 
 def format_users(amount: int = 100) -> list:

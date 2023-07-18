@@ -1,6 +1,6 @@
 import pathlib
 
-from app.config import FILES_OUTPUT_DIR
+from application.config import FILES_OUTPUT_DIR
 
 
 def create_file(file_path: pathlib.Path = None) -> pathlib.Path:

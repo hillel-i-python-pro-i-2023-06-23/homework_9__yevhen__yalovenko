@@ -1,8 +1,12 @@
-# For name and emoji generation.
+# Core for web.
+flask==2.3.2
+
+# For better query hadnling.
+webargs==8.3.0
+
+# For name generation.
 faker==19.1.0
 
-#For getting request for json
-requests==2.31.0
 # [code_style]-[BEGIN]
 # Pre-commit hook.
 pre-commit==3.3.3
@@ -15,3 +19,4 @@ flake8==6.0.0
 # Removes unused imports and unused variables.
 autoflake==2.2.0
 # [code_style]-[END]
+requests~=2.31.0

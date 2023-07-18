@@ -1,6 +1,6 @@
 import csv
 
-from app.services.getting_request import getting_request
+from application.services.getting_request import getting_request
 
 
 def read_csv(url):

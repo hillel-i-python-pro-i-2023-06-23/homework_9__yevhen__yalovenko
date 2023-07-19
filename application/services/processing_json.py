@@ -1,12 +1,11 @@
-from application.services.getting_request import getting_request
+import requests
 
 
-def processing_json_file(url) -> dict:
-    json_file = getting_request(url).json()
-    return json_file
+def getting_request(url) -> dict:
+    return requests.get(url).json()
 
 
-def output_json(url) -> str:
-    json_file = processing_json_file(url)
-    number = json_file['number']
+def output_json(data: dict) -> str:
+    json_file = data
+    number = json_file["number"]
     return f"Numbers of cosmonauts for now is: {number}"

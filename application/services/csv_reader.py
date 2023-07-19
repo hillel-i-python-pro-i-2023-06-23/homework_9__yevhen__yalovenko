@@ -1,10 +1,10 @@
 import csv
 
-from application.services.getting_request import getting_request
+import requests
 
 
 def read_csv(url):
-    response = getting_request(url)
+    response = requests.get(url)
     content = response.text.splitlines()
 
     reader = csv.DictReader(content)
@@ -18,8 +18,8 @@ def calculate_average_height_weight(reader):
     count = 0
 
     for row in reader:
-        height_cm = float(row['Height(Inches)']) * 2.54
-        weight_kg = float(row['Weight(Pounds)']) * 0.45359237
+        height_cm = float(row["Height(Inches)"]) * 2.54
+        weight_kg = float(row["Weight(Pounds)"]) * 0.45359237
         total_height += height_cm
         total_weight += weight_kg
         count += 1

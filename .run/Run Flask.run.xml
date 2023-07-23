@@ -1,14 +1,12 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Run Flask" type="Python.FlaskServer">
     <option name="flaskDebug" value="true" />
-    <module name="homework__yevhen_yalovenko__04" />
-    <option name="target" value="C:\Users\HomePC\PycharmProjects\homework_8__yevhen__yalovenko\app.py" />
-    <option name="targetType" value="PATH" />
+    <module name="homework_9__yevhen__yalovenko" />
     <option name="INTERPRETER_OPTIONS" value="" />
     <option name="PARENT_ENVS" value="true" />
-    <option name="SDK_HOME" value="C:\Users\HomePC\PycharmProjects\homework__yevhen_yalovenko__04\venv\Scripts\python.exe" />
-    <option name="SDK_NAME" value="Python 3.11 (homework__yevhen_yalovenko__04)" />
-    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    <option name="SDK_HOME" value="C:\Users\HomePC\AppData\Local\Programs\Python\Python311\python.exe" />
+    <option name="SDK_NAME" value="Python 3.11" />
+    <option name="WORKING_DIRECTORY" value="" />
     <option name="IS_MODULE_SDK" value="false" />
     <option name="ADD_CONTENT_ROOTS" value="true" />
     <option name="ADD_SOURCE_ROOTS" value="true" />

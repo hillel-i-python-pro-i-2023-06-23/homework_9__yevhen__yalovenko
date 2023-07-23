@@ -84,6 +84,20 @@ def phone_update(args, user_id: int):
     return "OK"
 
 
+@app.route("/phones/delete/<int:user_id>")
+def phone_delete(user_id: int):
+    with DBConnection() as connection:
+        with connection:
+            connection.execute(
+                "DELETE FROM phones WHERE (user_id=:user_id);",
+                {
+                    "user_id": user_id,
+                },
+            )
+
+    return "Ok"
+
+
 @app.route("/get-content/")
 def get_content():
     return read_file()
